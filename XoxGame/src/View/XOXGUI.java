@@ -35,7 +35,7 @@ public class XOXGUI extends JFrame {
 	protected JPanel panelPlayerData = new JPanel();
 	protected JLabel lblOyuncuBilgi = new JLabel("Oyuncu Bilgileri");
 	protected JLabel lblOyuncuAdi = new JLabel("Oyuncu Bilgileri:");
-	protected JButton btnBasla = new JButton("Baþlat");
+	protected JButton btnBasla = new JButton("Baslat");
 	protected JPanel panelGameBoard = new JPanel();
 	protected JLabel lblOyunAlani = new JLabel("Oyun Alani");
 	protected JPanel panelBtn = new JPanel();
@@ -58,8 +58,8 @@ public class XOXGUI extends JFrame {
 	protected JPanel panelSkor = new JPanel();
 	protected JLabel lblSkor = new JLabel("Skorlar");
 	protected JList listSkorlar = new JList();
-	protected JButton btnCikis = new JButton("Çýk");
-	protected JButton btnOyunuSfrla = new JButton("Oyunu Sýfýrla");
+	protected JButton btnCikis = new JButton("Cik");
+	protected JButton btnOyunuSfrla = new JButton("Oyunu Sifirla");
 	protected static String[] box = new String[9];
 	protected static int Sayac = 0;
 	protected static boolean OyunDurumu = false;
@@ -124,19 +124,19 @@ public class XOXGUI extends JFrame {
 		String msg = "";
 		switch (str) {
 		case "name":
-			msg = "Lütfen Kullanýcý Adý Giriniz!!";
+			msg = "Lutfen Kullanici Adi Giriniz!!";
 			break;
 		case "draw":
 			msg = "Oyun Berabere!!";
 			break;
 		case "win":
-			msg = "Tebrikler " + lblOyuncu.getText().toUpperCase() + " Oyunu Kazandýn!!";
+			msg = "Tebrikler " + lblOyuncu.getText().toUpperCase() + " Oyunu Kazandin!!";
 			break;
 		case "lose":
-			msg = "Üzgünüm " + lblOyuncu.getText().toUpperCase() + " Oyunu Dona Kazandý!!";
+			msg = "Uzgunum " + lblOyuncu.getText().toUpperCase() + " Oyunu Dona Kazandi!!";
 			break;
 		}
-		JOptionPane.showMessageDialog(null, msg, "Uyarý", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, msg, "UyarÃ½", JOptionPane.INFORMATION_MESSAGE);
 	}
 
 	public void Kontroll() {
